@@ -5,7 +5,7 @@ const baseRoute = '/shop';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('Shop Routes');
+    res.render('shop', { baseRoute: baseRoute });
 });
 
 module.exports = {

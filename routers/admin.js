@@ -4,7 +4,7 @@ const baseRoute = '/admin';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.send('Admin Routes');
+    res.render('admin', { baseRoute: baseRoute });
 });
 
 module.exports = {
