@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/m-zaink/storefront/issues"
   },
-  "homepage": "https://github.com/m-zaink/storefront#readme"
+  "homepage": "https://github.com/m-zaink/storefront#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
 }
