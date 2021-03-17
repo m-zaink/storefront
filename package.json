@@ -1,0 +1,24 @@
+{
+  "name": "storefront",
+  "version": "1.0.0",
+  "description": "An e-commerce website analogous to Amazon",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/m-zaink/storefront.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "trade",
+    "shopping"
+  ],
+  "author": "m_zaink",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-zaink/storefront/issues"
+  },
+  "homepage": "https://github.com/m-zaink/storefront#readme"
+}
