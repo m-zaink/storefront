@@ -12,6 +12,8 @@ app.use(express.static(path.join('public')));
 
 app.set('view engine', 'ejs');
 
+app.use(express.urlencoded({ extended: false }));
+
 app.use(adminRouter.baseRoute, adminRouter.router);
 app.use(shopRouter.baseRoute, shopRouter.router);
 app.use(landingRouter.baseRoute, landingRouter.router);
