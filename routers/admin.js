@@ -3,6 +3,8 @@ const express = require('express');
 const baseRoute = '/admin';
 const router = express.Router();
 
+const { Product } = require('../models/product');
+
 router.get('/', (req, res) => {
     res.render('admin', { baseRoute: baseRoute });
 });
@@ -13,9 +15,15 @@ router.get('/add-product', (req, res) => {
 
 router.post('/add-product', (req, res) => {
     const productData = req.body;
-    console.log(productData);
 
-    res.redirect(baseRoute);
+    const product = new Product(productData.name);
+
+    product.save(() => {
+        res.redirect('/shop');
+    }, (err) => {
+        res.send('Something went wrong');
+    });
+
 });
 
 module.exports = {
